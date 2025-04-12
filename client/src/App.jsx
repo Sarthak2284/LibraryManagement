@@ -9,6 +9,9 @@ import Footer from './components/Footer';
 import Collections from './pages/Collections';
 import ProductPage from './pages/ProductPage';
 import Cart from './pages/Cart';
+import Checkout from './pages/Checkout';
+import OrderForm from './pages/OrderForm';
+
 
 
 function App() {
@@ -23,9 +26,13 @@ function App() {
           <Route path='/collection' element={<Collections />} />
           <Route path="/product/:id" element={<ProductPage />} />
           <Route path="/cart" element={<Cart />} />
+          <Route path="/checkout" element={<Checkout />} />
+          <Route path="/order-form" element={<OrderForm />} />
+
+
 
         </Routes>
-        <ToastContainer />
+             <ToastContainer />
       </div>
       <Footer />
     </div>
