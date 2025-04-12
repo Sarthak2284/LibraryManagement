@@ -32,7 +32,7 @@ function ProductPage() {
     const existingCart = JSON.parse(localStorage.getItem('cart')) || [];
   
     // Check if the book already exists in the cart
-    const existingBookIndex = existingCart.findIndex((book) => book.id === book.id);
+    const existingBookIndex = existingCart.findIndex((item) => item.id === book.id);
   
     if (existingBookIndex >= 0) {
       // Increase the quantity of the existing book
